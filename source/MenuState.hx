@@ -1,11 +1,15 @@
 package;
 
-import flixel.FlxState;
-
 class MenuState extends FlxState
 {
+	public var character:FlxSprite;
+
 	override public function create():Void
 	{
+		character = new FlxSprite();
+		character.loadGraphic(FileManager.getImageFile('menus/mainmenu-characters'));
+		add(character);
+
 		super.create();
 	}
 
