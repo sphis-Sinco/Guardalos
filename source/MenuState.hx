@@ -7,7 +7,7 @@ class MenuState extends FlxState
 	override public function create():Void
 	{
 		character = new FlxSprite();
-		character.loadGraphic(FileManager.getImageFile('menus/mainmenu-characters'));
+		character.loadGraphic(FileManager.getImageFile('menus/mainmenu-character'));
 		add(character);
 
 		super.create();
