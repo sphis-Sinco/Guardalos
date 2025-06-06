@@ -10,6 +10,7 @@ class MenuState extends FlxState
 		character.loadGraphic(FileManager.getImageFile('menus/mainmenu-character'), true, 32, 32);
 		character.animation.add('move', [0, 1], 6);
 		character.animation.play('move');
+		character.scale.set(2, 2);
 		character.screenCenter();
 		add(character);
 
